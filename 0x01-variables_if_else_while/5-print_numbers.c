@@ -1,16 +1,17 @@
 #include <stdio.h>
- /**
-  * main - main function
-  * 
-  * Return: always 0 when program is successful
-  */
+
+/**
+ * main - the main function to print single digits from 0 to 9
+ *
+ * Return: always 0 when successful
+ */
 
 int main(void)
 {
-int i;
+	int ch;
 
-for (i = 0 ; i < 10 ; i++)
-printf("%d", i);
-printf("\n");
-return (0);
+	for (ch = 0 ; ch < 10 ; ch++)
+		printf("%d", ch);
+	printf("\n");
+	return (0);
 }
