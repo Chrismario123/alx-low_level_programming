@@ -1,19 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - Prints numbers between 0 to 9 and letters between a to f.
- * Return: Always 0 (Success)
+ * main - this is the main function that prints hexadecimal in lowercase
+ *
+ * Return: always 0 when program is successful
  */
+
 int main(void)
 {
-int i;
-for (i = 48; i < 58; i++)
-{
-putchar(i);
-}
-for (i = 97; i < 103; i++)
-{
-putchar(i);
-}
-putchar('\n');
-return (0);
+	int ch;
+	char ma;
+
+	for (ch = 0 ; ch < 10 ; ch++)
+		putchar(ch + '0');
+	for (ma = 'a' ; ma <= 'f' ; ma++)
+		putchar(ma);
+	putchar('\n');
+	return (0);
 }
