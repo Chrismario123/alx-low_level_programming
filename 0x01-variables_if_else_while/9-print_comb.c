@@ -1,20 +1,24 @@
 #include <stdio.h>
+
 /**
- * main - prints all possible combinations of single-digit numbers
- * Return: Always 0 (Success)
+ * main - this main function to print possible combination of single digits
+ *
+ * Return: always return 0 when successful
  */
+
 int main(void)
 {
-int n;
-for (n = 48; n < 58; n++)
-{
-putchar(n);
-if (n != 57)
-{
-putchar(',');
-putchar(' ');
-}
-}
-putchar('\n');
-return (0);
+	int i;
+
+	for (i = 0 ; i < 10 ; i++)
+	{
+		putchar(i + '0');
+		if (i != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }
