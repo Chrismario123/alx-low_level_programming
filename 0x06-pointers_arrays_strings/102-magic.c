@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - function to add a line of code, to print a[2] = 98
- * Return: 0
+ * main - function to add a line of code, to print a[2] = 9
+ *Return: 0
  */
 
 int main(void)
 {
 	int n;
-	int a[5];
+	int b[5];
 	int *p;
 
-	a[2] = 1024;
+	b[1] = 1024;
 	p = &n;
-
 	/*
 	 * write your line of code here...
 	 * Remember:
