@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - function to add a line of code, to print a[2] = 98
+ * Return: 0
+ */
+
 int main(void)
 {
 	int n;
