@@ -8,19 +8,21 @@
 
 char *leet(char *n)
 {
-int i, j;
-char s1[] = "aAeEoOtTlL";
-char s2[] = "4433007711";
+	char *ptr = n;
 
-for (i = 0; n[i] != '\0'; i++)
-{
-for (j = 0; j < 10; j++)
-{
-if (n[i] == s1[j])
-{
-n[i] = s2[j];
-}
-}
-}
-return (n);
+	while (*ptr != '\0')
+	{
+		if (*ptr == 'a' || *ptr == 'A')
+			*ptr = '4';
+		else if (*ptr == 'e' || *ptr == 'E')
+			*ptr = '3';
+		else if (*ptr == 'o' || *ptr == 'O')
+			*ptr = '0';
+		else if (*ptr == 't' || *ptr == 'T')
+			*ptr = '7';
+		else if (*ptr == 'l' || *ptr == 'L')
+			*ptr = '1';
+		ptr++;
+	}
+	return (n);
 }
