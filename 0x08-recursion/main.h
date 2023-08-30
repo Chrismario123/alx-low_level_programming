@@ -4,6 +4,7 @@
 int check_pal(char *s, int i, int len);
 int actual_prime(int n, int i);
 int actual_sqrt_recursion(int n, int i);
+int wildcmp(char *s1, char *s2);
 
 
 void _puts_recursion(char *s);
