@@ -1,8 +1,11 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int check_pal(char *s, int i, int len);
 int actual_prime(int n, int i);
 int actual_sqrt_recursion(int n, int i);
+
+
 void _puts_recursion(char *s);
 int _putchar(char c);
 void _print_rev_recursion(char *s);
