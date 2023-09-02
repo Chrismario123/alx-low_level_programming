@@ -12,24 +12,24 @@
 
 int main(int argc, char *argv[])
 {
-	int i, p;
+	int u, p;
 	int sum = 0;
 
 	if (argc == 1)
 		printf("%d\n", 0);
 	else
 	{
-		for (i = 1 ; i < argc ; i++)
+		for (u = 1 ; u < argc ; u++)
+		{
+			for (p = 0 ; argv[u][p] != '\0' ; p++)
 			{
-			for (p = 0 ; argv[i][p] != '\0' ; p++)
-			{
-				if (!(isdigit(argv[i][p])))
+				if (!(isdigit(argv[u][p])))
 				{
 					printf("error\n");
-					return (1);
+					return(1);
 				}
 			}
-			sum = sum + atoi(argv[i]);
+			sum = sum + atoi(argv[u]);
 		}
 		printf("%d\n", sum);
 	}
