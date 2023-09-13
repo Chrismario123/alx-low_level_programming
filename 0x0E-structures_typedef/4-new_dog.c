@@ -1,3 +1,4 @@
+
 #include <stdlib.h>
 #include "dog.h"
 
@@ -18,6 +19,7 @@ i++;
 }
 return (i);
 }
+
 /**
  * *_strcpy - copies the string pointed to by src
  * including the terminating null byte (\0)
@@ -58,9 +60,7 @@ int len1, len2;
 
 len1 = _strlen(name);
 len2 = _strlen(owner);
-
 dog = malloc(sizeof(dog_t));
-
 if (dog == NULL)
 return (NULL);
 dog->name = malloc(sizeof(char) * (len1 + 1));
